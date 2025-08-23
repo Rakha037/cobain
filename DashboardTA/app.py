@@ -19,7 +19,7 @@ def get_tuning_params(n_predictors):
         1: {"lag": 1, "batch_size": 8, "units": 100, "dropout": 0.5, "epochs": 150},
         2: {"lag": 1, "batch_size": 32, "units": 150, "dropout": 0.3, "epochs": 100},
         3: {"lag": 1, "batch_size": 32, "units": 150, "dropout": 0.1, "epochs": 150},
-        4: {"lag": 1, "batch_size": 32, "units": 50, "dropout": 0.1, "epochs": 100},
+        4: {"lag": 1, "batch_size": 16, "units": 50, "dropout": 0.1, "epochs": 100},
         5: {"lag": 1, "batch_size": 8, "units": 150, "dropout": 0.3, "epochs": 50}
     }
     
@@ -923,4 +923,5 @@ elif menu == "Dashboard":
                 
                 st.info(f"📊 **Insight Perbandingan:**")
                 st.info(f"• Rata-rata selisih absolut: {avg_diff:.2f}")
+
                 st.info(f"• Rata-rata selisih persentase: {avg_diff_pct:.2f}%")
